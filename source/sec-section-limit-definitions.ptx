@@ -25,6 +25,14 @@
         </statement>
       </p>
     </definition>
+    <remark>
+      <p>
+        <xref ref="def_two_sided_limit"/> says the distance between <m>f(x)</m> and <m>L</m> can be made arbitrarily small
+        (<m>\epsilon</m>-small) by making the distance from <m>x</m> to <m>a</m> sufficiently small (<m>\delta</m>-small).
+        Or, in terms of intervals, <m>f(x)</m> is guaranteed to be in the open interval <m>(L - \epsilon, L + \epsilon)</m>
+        if <m>x</m> is in the open interval <m>(a - \delta, a + \delta)</m> where <m>x \neq a</m>.
+      </p>
+    </remark>
     <definition xml:id="def_left_hand_limit">
       <statement>
         <p>
@@ -59,6 +67,14 @@
         </p>
       </statement>
     </definition>
+    <remark>
+      <p>
+        <xref ref="def_infinite_limit"/> says that given any arbitrarily large positive number <m>M</m>,
+        you can find an even bigger value for <m>f(x)</m> if <m>x</m> is sufficiently close to <m>a</m>.
+        Conversely, given any arbitrarily large negative number <m>N</m>,
+        you can find an even more negative value for <m>f(x)</m> if <m>x</m> is sufficiently close to <m>a</m>.
+      </p>
+    </remark>
     <definition xml:id="def_vertical_asymptote">
       <statement>
         <p>
