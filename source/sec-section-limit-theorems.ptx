@@ -8,6 +8,19 @@
       <p>
         A two-sided limit exists if and only if both one-sided limits exist and are equal.
         <me>\lim_{{x \to a}} f(x) = L \iff \lim_{{x \to a^-}} f(x) = L = \lim_{{x \to a^+}} f(x)</me>
+        <alert>Existence can fail due to</alert>
+        <ol>
+          <li>
+            <p>
+              Both one-sided limits exist but are not equal
+            </p>
+          </li>
+          <li>
+            <p>
+              At least one, one-sided limit does not exist (infinite limit or oscillating).
+            </p>
+          </li>
+        </ol>
       </p>
     </statement>
   </theorem>

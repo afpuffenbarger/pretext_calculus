@@ -6,6 +6,8 @@
     <p>
       Let <m>f(x)</m> be a function defined on an open interval containing <m>a</m>, except possibly at <m>a</m> itself
       (i.e. <m>f(x)</m> need not be defined at exactly <m>a</m>).
+      <p></p>
+      Let <m>L</m> be any real number.
     </p>
   </statement>
   <definition xml:id="def_two_sided_limit">
@@ -18,6 +20,7 @@
       <me>0 \lt |x - a| \lt \delta \implies |f(x) - L| \lt \epsilon</me>
       or equivalently:
       <me>a - \delta \lt x \lt a + \delta \implies L - \epsilon \lt f(x) \lt L + \epsilon</me>
+      <alert>The limit is <m>L</m> means the limit exists and is equal to the real number <m>L</m>.</alert>
     </statement>
   </definition>
   <definition xml:id="def_left_hand_limit">
@@ -47,11 +50,11 @@
       The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is infinity, i.e.
       <me>\lim_{{x \to a}} f(x) = \infty</me>
       if for every positive number <m>M</m> there exists a number <m>\delta \gt 0</m> such that:
-      <me>0 \lt |x - a| \lt \delta \implies f(x) \gt M</me>.
+      <me>0 \lt |x - a| \lt \delta \implies f(x) \gt M</me>
       The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is negative infinity, i.e. 
       <me>\lim_{{x \to a}} f(x) = -\infty</me> 
       if for every negative number <m>N</m> there exists a number <m>\delta \gt 0</m> such that:
-      <me>0 \lt |x - a| \lt \delta \implies f(x) \lt N</me>.
+      <me>0 \lt |x - a| \lt \delta \implies f(x) \lt N</me>
     </statement>
   </definition>
   <definition xml:id="def_vertical_asymptote">
