@@ -4,7 +4,6 @@
   <title>Limit Theorems</title>
   <theorem xml:id="thm-Limit-Existence">
     <p>
-      <term>Existence of Two-sided Limit</term>
       <statement>
         <p>
           A two-sided limit exists if and only if both one-sided limits exist and are equal.
@@ -15,7 +14,6 @@
   </theorem>
   <theorem xml:id="thm-Direct-Substitution-Property">
     <p>
-      <term>Direct Substitution Property</term>
       <statement>
         <p>
           If <m>f</m> is a polynomial or a rational function and <m>a</m> is in the domain of <m>f</m>, then:
@@ -26,7 +24,6 @@
   </theorem>
   <theorem xml:id="thm-Comparison-Property">
     <p>
-      <term>Comparison Property</term>
       <statement>
         <p>
           If <m>f(x) \leq g(x)</m> when <m>x</m> is near <m>a</m> 
@@ -38,7 +35,6 @@
   </theorem>
   <theorem xml:id="thm-Squeeze-Theorem">
     <p>
-      <term>Squeeze (Sandwich) Theorem</term>
       <statement>
         <p>
           If <m>f(x) \leq g(x) \leq h(x)</m> when <m>x</m> is near <m>a</m> 
