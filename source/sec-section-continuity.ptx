@@ -10,31 +10,7 @@
           <me>\lim_{{x \to a}} f(x) = f(a)</me>
         </p>
       </statement>
-      <alert>Continuity implies:</alert>
-      <ol>
-        <li>
-          <p>
-            <m>f(a)</m> is defined (i.e. <m>a</m> is in the domain of <m>f</m>)
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>\lim_{{x \to a}} f(x)</m> exists
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>\lim_{{x \to a}} f(x) = f(a)</m>
-          </p>
-        </li>
-      </ol>
     </definition>
-    <remark>
-      <p>
-        A continuous process takes place gradually, without interruption or sudden change. Geometrically
-        , a continuous function can be thought of as a function whose graph has no breaks/holes and can be drawn without lifting pen from paper.
-      </p>
-    </remark>
     <definition xml:id="def-discontinuity">
       <statement>
         <p>
@@ -43,23 +19,6 @@
           , if <m>f</m> is not continuous at <m>a</m>.
         </p>
       </statement>
-      <ol>
-        <li>
-          <p>
-            Removable discontinuity - can be removed by redefining <m>f</m> at <m>a</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Infinite discontinuity - <m>f</m> increases/decreases without bound near <m>a</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Jump discontinuity - <m>f</m> jumps from one value to another near <m>a</m>.
-          </p>
-        </li>
-      </ol>
     </definition>
     <definition xml:id="def-one-sided-continuity">
       <statement>
@@ -84,15 +43,6 @@
         </p>
       </statement>
     </definition>
-    <remark>
-      <p>
-        The long way of showing <m>f</m> satisfies <xref ref="def-continuous-on-interval"/> is by showing that if <m>b \lt a \lt c</m>
-        where <m>b</m> and <m>c</m> are the left and right endpoints of the interval, then:
-        <me>\lim_{{x \to a}} f(x) = f(a)</me> is always true. Then, if the interval is closed, we can show:
-        <me>\lim_{{x \to b^+}} f(x) = f(b) \quad \text{and} \quad \lim_{{x \to c^-}} f(x) = f(c)</me>
-        to verify continuity at the left and right endpoints.
-      </p>
-    </remark>
     <definition xml:id="def-continuous-function-operations">
       <statement>
         <p>
@@ -122,11 +72,6 @@
         </p>
       </statement>
     </definition>
-    <remark>
-      <p>
-        <xref ref="def-continuous-function-operations"/> follows from the corresponding limit laws in <xref ref="sec-section-limit-laws"/>
-      </p>
-    </remark>
     <theorem xml:id="thm-continuity-inverses">
       <statement>
         <p>
@@ -134,13 +79,6 @@
         </p>
       </statement>
     </theorem>
-    <remark>
-      <p>
-        <xref ref="thm-continuity-inverses"/> follows from the fact that the graph of <m>f^{-1}</m> is
-        the graph of <m>f</m> reflected over the line <m>y = x</m>.
-        Therefore, if the graph of <m>f</m> has no breaks/holes, then neither does the graph of <m>f^{-1}</m>.
-      </p>
-    </remark>
     <theorem xml:id="thm-continuity-of-common-functions">
       <statement>
         <p>
@@ -200,12 +138,6 @@
         </p>
       </statement>
     </theorem>
-    <remark>
-      <p>
-        <xref ref="thm-limit-of-function-is-function-of-limit"/> says the limit operator can move through a function symbol 
-        if the function is continuous and the limit exists.
-      </p>
-    </remark>
     <theorem xml:id="thm-continuous-function-of-continuous-function">
       <statement>
         <p>
@@ -214,11 +146,6 @@
         </p>
       </statement>
     </theorem>
-    <remark>
-      <p>
-        <xref ref="thm-continuous-function-of-continuous-function"/> says a continuous function of a continuous function is also continuous.
-      </p>
-    </remark>
     <theorem xml:id="thm-intermediate-value-theorem">
       <term>Intermediate Value Theorem</term>
       <statement>
@@ -232,12 +159,5 @@
         </p>
       </statement>
     </theorem>
-    <remark>
-      <p>
-        <xref ref="thm-intermediate-value-theorem"/> says a continuous function takes on every value between <m>f(a)</m> and <m>f(b)</m>.
-        Geometrically, if the horizontal line <m>y = N</m> is between <m>f(a)</m> and <m>f(b)</m>, then graph of <m>f</m> must intersect the graph of
-        <m>y = N</m> somewhere. This is particularly useful in root finding (finding zeros) where <m>f(a) \lt 0</m> and <m>f(b) \gt 0</m>.
-      </p>
-    </remark>
   </p>
 </section>

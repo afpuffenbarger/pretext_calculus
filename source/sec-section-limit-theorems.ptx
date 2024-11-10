@@ -13,23 +13,6 @@
         </statement>
       </p>
     </theorem>
-    <remark>
-      <p>
-        Existence of a limit under <xref ref="thm-limit-existence"/> can fail because either:
-        <ol>
-          <li>
-            <p>
-              Both one-sided limits exist but are different
-            </p>
-          </li>
-          <li>
-            <p>
-              At least one, one-sided limit does not exist (because of an infinite limit or the function oscillates wildly near <m>a</m>)
-            </p>
-          </li>
-        </ol>
-      </p>
-    </remark>
     <theorem xml:id="thm-direct-substitution-property">
       <p>
         <term>Direct Substitution Property</term>
@@ -52,11 +35,6 @@
         </statement>
       </p>
     </theorem>
-    <remark>
-      <p>
-        <xref ref="thm-comparison-property"/> is primarily used as support for the <alert>Squeeze Theorem</alert>.
-      </p>
-    </remark>
     <theorem xml:id="thm-squeeze-theorem">
       <p>
         <term>Squeeze or Sandwich Theorem</term>

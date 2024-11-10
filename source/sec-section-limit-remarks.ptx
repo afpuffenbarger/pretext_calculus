@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section-limit-remarks">
+    <title>Helpful Limit Remarks</title>
+    <remark>
+        <p>
+          <xref ref="def_two_sided_limit"/> says the distance between <m>f(x)</m> and <m>L</m> can be made arbitrarily small
+          (<m>\epsilon</m>-small) by making the distance from <m>x</m> to <m>a</m> sufficiently small (<m>\delta</m>-small).
+          Or, in terms of intervals, <m>f(x)</m> is guaranteed to be in the open interval <m>(L - \epsilon, L + \epsilon)</m>
+          if <m>x</m> is in the open interval <m>(a - \delta, a + \delta)</m> where <m>x \neq a</m>.
+        </p>
+      </remark>
+      <remark>
+        <p>
+          <xref ref="def_infinite_limit"/> says that given any arbitrarily large positive number <m>M</m>,
+          you can find an even bigger value for <m>f(x)</m> if <m>x</m> is sufficiently close to <m>a</m>.
+          Conversely, given any arbitrarily large negative number <m>N</m>,
+          you can find an even more negative value for <m>f(x)</m> if <m>x</m> is sufficiently close to <m>a</m>.
+        </p>
+      </remark>
+      <remark>
+        <p>
+          Existence of a limit under <xref ref="thm-limit-existence"/> can fail because either:
+          <ol>
+            <li>
+              <p>
+                Both one-sided limits exist but are different
+              </p>
+            </li>
+            <li>
+              <p>
+                At least one, one-sided limit does not exist (because of an infinite limit or the function oscillates wildly near <m>a</m>)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </remark>
+      <remark>
+        <p>
+          <xref ref="thm-comparison-property"/> is primarily used as support for the <alert>Squeeze Theorem</alert>.
+        </p>
+      </remark>
+      <remark>
+        <p>
+          A continuous process takes place gradually, without interruption or sudden change. Geometrically
+          , a continuous function can be thought of as a function whose graph has no breaks/holes and can be drawn without lifting pen from paper.
+        </p>
+      </remark>
+      <remark>
+        <p>Continuity under <xref ref="def-continuity"/> implies:</p>
+        <ol>
+          <li>
+            <p>
+              <m>f(a)</m> is defined (i.e. <m>a</m> is in the domain of <m>f</m>)
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\lim_{{x \to a}} f(x)</m> exists
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\lim_{{x \to a}} f(x) = f(a)</m>
+            </p>
+          </li>
+        </ol>
+      </remark>
+      <remark>
+        <p>
+            Types of discontinuities under <xref ref="def-discontinuity"/> include:
+            <ol>
+                <li>
+                  <p>
+                    Removable discontinuity - can be removed by redefining <m>f</m> at <m>a</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Infinite discontinuity - <m>f</m> increases/decreases without bound near <m>a</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Jump discontinuity - <m>f</m> jumps from one value to another near <m>a</m>.
+                  </p>
+                </li>
+              </ol>
+        </p>
+      </remark>
+      <remark>
+        <p>
+          The long way of showing <m>f</m> satisfies continuity over an interval under <xref ref="def-continuous-on-interval"/> is by showing that if <m>b \lt a \lt c</m>
+          where <m>b</m> and <m>c</m> are the left and right endpoints of the interval, then:
+          <me>\lim_{{x \to a}} f(x) = f(a)</me> is always true. Then, if the interval is closed, we can show:
+          <me>\lim_{{x \to b^+}} f(x) = f(b) \quad \text{and} \quad \lim_{{x \to c^-}} f(x) = f(c)</me>
+          to verify continuity at the left and right endpoints.
+        </p>
+      </remark>
+      <remark>
+        <p>
+          <xref ref="def-continuous-function-operations"/> follows from the corresponding limit laws in <xref ref="sec-section-limit-laws"/>
+        </p>
+      </remark>
+      <remark>
+        <p>
+          <xref ref="thm-continuity-inverses"/> follows from the fact that the graph of <m>f^{-1}</m> is
+          the graph of <m>f</m> reflected over the line <m>y = x</m>.
+          Therefore, if the graph of <m>f</m> has no breaks/holes, then neither does the graph of <m>f^{-1}</m>.
+        </p>
+      </remark>
+      <remark>
+        <p>
+          <xref ref="thm-limit-of-function-is-function-of-limit"/> says the limit operator can move through a function symbol 
+          if the function is continuous and the limit exists.
+        </p>
+      </remark>
+      <remark>
+        <p>
+          <xref ref="thm-continuous-function-of-continuous-function"/> says a continuous function of a continuous function is also continuous.
+        </p>
+      </remark>
+      <remark>
+        <p>
+          <xref ref="thm-intermediate-value-theorem"/> says a continuous function takes on every value between <m>f(a)</m> and <m>f(b)</m>.
+          Geometrically, if the horizontal line <m>y = N</m> is between <m>f(a)</m> and <m>f(b)</m>, then graph of <m>f</m> must intersect the graph of
+          <m>y = N</m> somewhere. This is particularly useful in root finding (finding zeros) where <m>f(a) \lt 0</m> and <m>f(b) \gt 0</m>.
+        </p>
+      </remark>
+</section>
