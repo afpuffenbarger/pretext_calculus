@@ -2,48 +2,50 @@
 
 <section xml:id="sec-section-limit-theorems" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Limit Theorems</title>
-  <theorem xml:id="thm-Limit-Existence">
-    <p>
-      <statement>
-        <p>
-          A two-sided limit exists if and only if both one-sided limits exist and are equal.
-          <me>\lim_{{x \to a}} f(x) = L \iff \lim_{{x \to a^-}} f(x) = L = \lim_{{x \to a^+}} f(x)</me>
-        </p>
-      </statement>
-    </p>
-  </theorem>
-  <theorem xml:id="thm-Direct-Substitution-Property">
-    <p>
-      <statement>
-        <p>
-          If <m>f</m> is a polynomial or a rational function and <m>a</m> is in the domain of <m>f</m>, then:
-          <me>\lim_{{x \to a}} f(x) = f(a)</me>
-        </p>
-      </statement>
-    </p>
-  </theorem>
-  <theorem xml:id="thm-Comparison-Property">
-    <p>
-      <statement>
-        <p>
-          If <m>f(x) \leq g(x)</m> when <m>x</m> is near <m>a</m> 
-          and the limits of <m>f</m> and <m>g</m> both exist when approaches <m>a</m> then:
-          <me>\lim_{{x \to a}} f(x) \leq \lim_{{x \to a}} g(x)</me>
-        </p>
-      </statement>
-    </p>
-  </theorem>
-  <theorem xml:id="thm-Squeeze-Theorem">
-    <p>
-      <statement>
-        <p>
-          If <m>f(x) \leq g(x) \leq h(x)</m> when <m>x</m> is near <m>a</m> 
-          and
-          <me>\lim_{{x \to a}} f(x) = L = \lim_{{x \to a}} h(x)</me>
-          then
-          <me>\lim_{{x \to a}} g(x) = L</me>
-        </p>
-      </statement>
-    </p>
-  </theorem>  
+  <p>
+    <theorem xml:id="thm-Limit-Existence">
+      <p>
+        <statement>
+          <p>
+            A two-sided limit exists if and only if both one-sided limits exist and are equal.
+            <me>\lim_{{x \to a}} f(x) = L \iff \lim_{{x \to a^-}} f(x) = L = \lim_{{x \to a^+}} f(x)</me>
+          </p>
+        </statement>
+      </p>
+    </theorem>
+    <theorem xml:id="thm-Direct-Substitution-Property">
+      <p>
+        <statement>
+          <p>
+            If <m>f</m> is a polynomial or a rational function and <m>a</m> is in the domain of <m>f</m>, then:
+            <me>\lim_{{x \to a}} f(x) = f(a)</me>
+          </p>
+        </statement>
+      </p>
+    </theorem>
+    <theorem xml:id="thm-Comparison-Property">
+      <p>
+        <statement>
+          <p>
+            If <m>f(x) \leq g(x)</m> when <m>x</m> is near <m>a</m> 
+            and the limits of <m>f</m> and <m>g</m> both exist when approaches <m>a</m> then:
+            <me>\lim_{{x \to a}} f(x) \leq \lim_{{x \to a}} g(x)</me>
+          </p>
+        </statement>
+      </p>
+    </theorem>
+    <theorem xml:id="thm-Squeeze-Theorem">
+      <p>
+        <statement>
+          <p>
+            If <m>f(x) \leq g(x) \leq h(x)</m> when <m>x</m> is near <m>a</m> 
+            and
+            <me>\lim_{{x \to a}} f(x) = L = \lim_{{x \to a}} h(x)</me>
+            then
+            <me>\lim_{{x \to a}} g(x) = L</me>
+          </p>
+        </statement>
+      </p>
+    </theorem>
+  </p>
 </section>

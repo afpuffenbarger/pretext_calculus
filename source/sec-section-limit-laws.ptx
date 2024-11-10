@@ -2,58 +2,60 @@
 
 <section xml:id="sec-section-limit-laws" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Limit Laws</title>
-  <statement>
-    <p>
-      Suppose that <m>c</m> is a constant and
-      <me>\lim_{{x \to a}} f(x) \quad \text{and} \quad \lim_{{x \to a}} g(x)</me>
-      both exist.
-    </p>
-  </statement>
-  <ol>
-    <li>
+  <p>
+    <statement>
       <p>
-        <term>Sum Law</term>
-        <me>\lim_{{x \to a}} [f(x) + g(x)] = \lim_{{x \to a}} f(x) + \lim_{{x \to a}} g(x)</me>
+        Suppose that <m>c</m> is a constant and
+        <me>\lim_{{x \to a}} f(x) \quad \text{and} \quad \lim_{{x \to a}} g(x)</me>
+        both exist.
       </p>
-    </li>
-    <li>
-      <p>
-        <term>Difference Law</term>
-        <me>\lim_{{x \to a}} [f(x) - g(x)] = \lim_{{x \to a}} f(x) - \lim_{{x \to a}} g(x)</me>
-      </p>
-    </li>
-    <li>
-      <p>
-        <term>Constant Multiple Law</term>
-        <me>\lim_{{x \to a}} [cf(x)] = c\lim_{{x \to a}} f(x)</me>
-      </p>
-    </li>
-    <li>
-      <p>
-        <term>Product Law</term>
-        <me>\lim_{{x \to a}} [f(x)g(x)] = \lim_{{x \to a}} f(x) * \lim_{{x \to a}} g(x)</me>
-      </p>
-    </li>
-    <li>
-      <p>
-        <term>Quotient Law</term>
-        <me>\lim_{{x \to a}} \frac{f(x)}{g(x)} = \frac{\lim_{{x \to a}} f(x)}{\lim_{{x \to a}} g(x)}
-          \quad \text{if} \space \lim_{{x \to a}} g(x) \neq 0
-        </me>
-      </p>
-    </li>
-    <li>
-      <p>
-        <term>Power Law</term>
-        <me>\lim_{{x \to a}} [f(x)]^n = [\lim_{{x \to a}} f(x)]^n</me>
-      </p>
-    </li>
-    <li>
-      <p>
-        <term>Root Law</term>
-        <me>\lim_{{x \to a}} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{{x \to a}} f(x)}</me>
-        where <m>n</m> is a positive integer
-      </p>
-    </li>
-  </ol>
+    </statement>
+    <ol>
+      <li>
+        <p>
+          <term>Sum Law</term>
+          <me>\lim_{{x \to a}} [f(x) + g(x)] = \lim_{{x \to a}} f(x) + \lim_{{x \to a}} g(x)</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Difference Law</term>
+          <me>\lim_{{x \to a}} [f(x) - g(x)] = \lim_{{x \to a}} f(x) - \lim_{{x \to a}} g(x)</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Constant Multiple Law</term>
+          <me>\lim_{{x \to a}} [cf(x)] = c\lim_{{x \to a}} f(x)</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Product Law</term>
+          <me>\lim_{{x \to a}} [f(x)g(x)] = \lim_{{x \to a}} f(x) * \lim_{{x \to a}} g(x)</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Quotient Law</term>
+          <me>\lim_{{x \to a}} \frac{f(x)}{g(x)} = \frac{\lim_{{x \to a}} f(x)}{\lim_{{x \to a}} g(x)}
+            \quad \text{if} \space \lim_{{x \to a}} g(x) \neq 0
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Power Law</term>
+          <me>\lim_{{x \to a}} [f(x)]^n = [\lim_{{x \to a}} f(x)]^n</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Root Law</term>
+          <me>\lim_{{x \to a}} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{{x \to a}} f(x)}</me>
+          where <m>n</m> is a positive integer
+        </p>
+      </li>
+    </ol>
+  </p>
 </section>

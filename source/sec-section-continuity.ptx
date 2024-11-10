@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section-continuity" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Continuity</title>
+  <p>
+    <definition xml:id="def-continuity">
+      <statement>
+        <p>
+          A function <m>f</m> is continuous at a number <m>a</m> if
+          <me>\lim_{{x \to a}} f(x) = f(a)</me>
+        </p>
+      </statement>
+    </definition>
+  </p>
+</section>

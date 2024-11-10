@@ -2,27 +2,29 @@
 
 <section xml:id="sec-section-special-limits">
     <title>Special and Useful Limits</title>
-    <ol>
-        <li>
-            <m>\lim_{{x \to a}} c = c \quad</m> where <m>c</m> is a constant
-        </li>
-        <li>
-            <m>\lim_{{x \to a}} x = a</m>
-        </li>
-        <li>
-            <m>\lim_{{x \to a}} x^n = a^n \quad</m> where <m>n</m> is a positive integer
-        </li>
-        <li>
-            <m>\lim_{{x \to a}} \sqrt[n]{x} = \sqrt[n]{a} \quad</m> where <m>n</m> is a positive integer
-        </li>
-        <li>
-            <m>\lim_{{x \to 0}} \frac{sin(x)}{x} = 1</m>
-        </li>
-        <li>
-            <m>\lim_{{x \to 0}} ln(x) = -\infty</m>
-        </li>
-        <li>
-            <m>\lim_{{x \to 0}} |x| = 0</m>
-        </li>
-    </ol>
+    <p>
+        <ol>
+            <li>
+                <m>\lim_{{x \to a}} c = c \quad</m> where <m>c</m> is a constant
+            </li>
+            <li>
+                <m>\lim_{{x \to a}} x = a</m>
+            </li>
+            <li>
+                <m>\lim_{{x \to a}} x^n = a^n \quad</m> where <m>n</m> is a positive integer
+            </li>
+            <li>
+                <m>\lim_{{x \to a}} \sqrt[n]{x} = \sqrt[n]{a} \quad</m> where <m>n</m> is a positive integer
+            </li>
+            <li>
+                <m>\lim_{{x \to 0}} \frac{sin(x)}{x} = 1</m>
+            </li>
+            <li>
+                <m>\lim_{{x \to 0}} ln(x) = -\infty</m>
+            </li>
+            <li>
+                <m>\lim_{{x \to 0}} |x| = 0</m>
+            </li>
+        </ol>
+    </p>
 </section>
