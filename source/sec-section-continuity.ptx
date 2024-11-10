@@ -61,5 +61,183 @@
         </li>
       </ol>
     </definition>
+    <definition xml:id="def-one-sided-continuity">
+      <statement>
+        <p>
+          A function <m>f</m> is <alert>continuous from the right at a number <m>a</m></alert> if
+          <me>
+            \lim_{{x \to a^+}} f(x) = f(a)
+          </me>
+          and <m>f</m> is <alert>continuous from the left at <m>a</m></alert> if
+          <me>
+            \lim_{{x \to a^-}} f(x) = f(a)
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-continuous-on-interval">
+      <statement>
+        <p>
+          A function <m>f</m> is <alert>continuous on an interval</alert> if it is continuous at every number in that interval.
+          (If <m>f</m> is defined on only one side of an endpoint of the interval, then continuous at the endpoint means
+          continuous from the right or continuous from the left).
+        </p>
+      </statement>
+    </definition>
+    <remark>
+      <p>
+        The long way of showing <m>f</m> satisfies <xref ref="def-continuous-on-interval"/> is by showing that if <m>b \lt a \lt c</m>
+        where <m>b</m> and <m>c</m> are the left and right endpoints of the interval, then:
+        <me>\lim_{{x \to a}} f(x) = f(a)</me> is always true. Then, if the interval is closed, we can show:
+        <me>\lim_{{x \to b^+}} f(x) = f(b) \quad \text{and} \quad \lim_{{x \to c^-}} f(x) = f(c)</me>
+        to verify continuity at the left and right endpoints.
+      </p>
+    </remark>
+    <definition xml:id="def-continuous-function-operations">
+      <statement>
+        <p>
+          If <m>f</m> and <m>g</m> are continuous at <m>a</m> and <m>c</m> is a constant, then the following are also continuous at <m>a</m>:
+          <ol>
+            <li>
+              <p>
+                <m>f \pm g</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>cf</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>f*g</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{f}{g} \quad</m> if <m>g(a) \neq 0</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
+    <remark>
+      <p>
+        <xref ref="def-continuous-function-operations"/> follows from the corresponding limit laws in <xref ref="sec-section-limit-laws"/>
+      </p>
+    </remark>
+    <theorem xml:id="thm-continuity-inverses">
+      <statement>
+        <p>
+          The inverse function (if it exists) of any continuous function is also continuous.
+        </p>
+      </statement>
+    </theorem>
+    <remark>
+      <p>
+        <xref ref="thm-continuity-inverses"/> follows from the fact that the graph of <m>f^{-1}</m> is
+        the graph of <m>f</m> reflected over the line <m>y = x</m>.
+        Therefore, if the graph of <m>f</m> has no breaks/holes, then neither does the graph of <m>f^{-1}</m>.
+      </p>
+    </remark>
+    <theorem xml:id="thm-continuity-of-common-functions">
+      <statement>
+        <p>
+          The following types of functions are continuous at every number in their domains:
+          <ol>
+            <li>
+              <p>
+                polynomials
+              </p>
+            </li>
+            <li>
+              <p>
+                rational functions
+              </p>
+            </li>
+            <li>
+              <p>
+                root functions
+              </p>
+            </li>
+            <li>
+              <p>
+                trigonometric functions
+              </p>
+            </li>
+            <li>
+              <p>
+                inverse trigonometric functions
+              </p>
+            </li>
+            <li>
+              <p>
+                exponential functions
+              </p>
+            </li>
+            <li>
+              <p>
+                logarithmic functions
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+    <theorem xml:id="thm-limit-of-function-is-function-of-limit">
+      <statement>
+        <p>
+          If <m>f</m> is continuous at <m>b</m> 
+          and <m>\lim_{{x \to a}} g(x) = b</m> then 
+          <me>
+            \lim_{{x \to a}} f(g(x)) = f(b)
+          </me>
+          in other words:
+          <me>
+            \lim_{{x \to a}} f(g(x)) = f(\lim_{{x \to a}} g(x))
+          </me>
+        </p>
+      </statement>
+    </theorem>
+    <remark>
+      <p>
+        <xref ref="thm-limit-of-function-is-function-of-limit"/> says the limit operator can move through a function symbol 
+        if the function is continuous and the limit exists.
+      </p>
+    </remark>
+    <theorem xml:id="thm-continuous-function-of-continuous-function">
+      <statement>
+        <p>
+          If <m>g</m> is continuous at <m>a</m> and <m>f</m> is continuous at <m>g(a)</m>, then <m>f(g(x))</m>
+          is also continuous at <m>a</m>.
+        </p>
+      </statement>
+    </theorem>
+    <remark>
+      <p>
+        <xref ref="thm-continuous-function-of-continuous-function"/> says a continuous function of a continuous function is also continuous.
+      </p>
+    </remark>
+    <theorem xml:id="thm-intermediate-value-theorem">
+      <term>Intermediate Value Theorem</term>
+      <statement>
+        <p>
+          Let <m>f</m> be a function that is continuous on the closed interval <m>[a, b]</m> and let
+          <m>N</m> be any real number such that 
+          <me>
+            f(a) \lt N \lt f(b) \quad \text{where} \quad f(a) \neq f(b)
+          </me>
+          There exists a number <m>c \in (a,b)</m> such that <m>f(c) = N</m>.
+        </p>
+      </statement>
+    </theorem>
+    <remark>
+      <p>
+        <xref ref="thm-intermediate-value-theorem"/> says a continuous function takes on every value between <m>f(a)</m> and <m>f(b)</m>.
+        Geometrically, if the horizontal line <m>y = N</m> is between <m>f(a)</m> and <m>f(b)</m>, then graph of <m>f</m> must intersect the graph of
+        <m>y = N</m> somewhere. This is particularly useful in root finding (finding zeros) where <m>f(a) \lt 0</m> and <m>f(b) \gt 0</m>.
+      </p>
+    </remark>
   </p>
 </section>

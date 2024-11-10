@@ -17,6 +17,12 @@
                 <m>\lim_{{x \to a}} \sqrt[n]{x} = \sqrt[n]{a} \quad</m> where <m>n</m> is a positive integer
             </li>
             <li>
+                <m>\lim_{{x \to 0}} sin(x) = 0</m>
+            </li>
+            <li>
+                <m>\lim_{{x \to 0}} cos(x) = 1</m>
+            </li>
+            <li>
                 <m>\lim_{{x \to 0}} \frac{sin(x)}{x} = 1</m>
             </li>
             <li>
