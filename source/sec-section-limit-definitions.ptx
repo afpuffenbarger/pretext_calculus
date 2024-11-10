@@ -91,14 +91,6 @@
           <mrow>\lim_{{x \to a}} f(x) \amp = -\infty \amp \lim_{{x \to a^-}} f(x) \amp = -\infty \amp \lim_{{x \to a^+}} f(x) \amp = -\infty</mrow>
         </md>
       </p>
-      <p>
-        The line <m>x = a</m> is called a <alert>vertical asymptote</alert> of the curve <m>y = f(x)</m>
-        if at least one of the following is true:
-        <md>
-          <mrow>\lim_{{x \to a}} f(x) \amp = \infty \amp \lim_{{x \to a^-}} f(x) \amp = \infty \amp \lim_{{x \to a^+}} f(x) \amp = \infty</mrow>
-          <mrow>\lim_{{x \to a}} f(x) \amp = -\infty \amp \lim_{{x \to a^-}} f(x) \amp = -\infty \amp \lim_{{x \to a^+}} f(x) \amp = -\infty</mrow>
-        </md>
-      </p>
     </statement>
   </definition>
 </section>
