@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section-limit-exercises" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Limit Exercises</title>
+    <exercises xml:id="exercises-limits">
+        <exercise>
+            <statement>
+                <p>
+                    Let <m>\left[ \left[ x \right] \right] = </m> the largest integer that is less than or equal to x 
+                    (i.e. the greatest integer function). Show that <m>\lim_{{x \to n}} \left[ \left[ x \right] \right]</m>,
+                    where <m>n</m> is any integer, does not exist.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use <xref ref="thm-limit-existence"/>. It may be helpful to try a specific value for <m>n</m> and then generalize.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\left[ \left[ x \right] \right] = n \quad \text{for} \quad n \leq x \lt n+1</m>
+                                <me></me>
+                                (i.e. <m>x</m> is approaching <m>n</m> from the right)
+                                <li>
+                                    <p>
+                                        <m>\lim_{{x \to n^+}} \left[ \left[ x \right] \right] = \lim_{{x \to n^+}} n = n \quad</m>
+                                    </p>
+                                </li>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\left[ \left[ x \right] \right] = n - 1 \quad \text{for} \quad n - 1 \leq x \lt n</m>
+                                <me></me>
+                                (i.e. <m>x</m> is approaching <m>n</m> from the left)
+                                <li>
+                                    <p>
+                                        <m>\lim_{{x \to n^-}} \left[ \left[ x \right] \right] = \lim_{{x \to n^-}} (n - 1) = n - 1 \quad</m>
+                                    </p>
+                                </li>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\lim_{{x \to n^+}} \left[ \left[ x \right] \right] \neq \lim_{{x \to n^-}} \left[ \left[ x \right] \right]</m>
+                                <me></me>
+                                <m>\therefore \lim_{{x \to n}} \left[ \left[ x \right] \right]</m> does not exist
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </exercise>
+    </exercises>
+</section>

@@ -10,6 +10,6 @@
   <xi:include href="sec-section-special-limits.ptx" />
   <xi:include href="sec-section-continuity.ptx" />
   <xi:include href="sec-section-limit-remarks.ptx" />
-
+  <xi:include href="sec-section-limit-exercises.ptx" />
 
 </chapter>
