@@ -49,5 +49,20 @@
         </statement>
       </p>
     </theorem>
+    <theorem xml:id="thm-rational-limits">
+      <statement>
+        <p>
+          If <m>r \gt 0</m> is a rational number, then
+          <me>
+            \lim_{{x \to \infty}} \frac{1}{x^r} = 0
+          </me>
+          If <m>r \gt 0</m> is a rational number such that <m>x^r</m> is defined for all <m>x</m>, then
+          <me>
+            \lim_{{x \to -\infty}} \frac{1}{x^r} = 0
+          </me>
+        </p>
+      </statement>
+    </theorem>
+    
   </p>
 </section>

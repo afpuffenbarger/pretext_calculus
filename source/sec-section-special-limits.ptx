@@ -31,6 +31,15 @@
             <li>
                 <m>\lim_{{x \to 0}} |x| = 0</m>
             </li>
+            <li>
+                <m>\lim_{{x \to \infty}} arctan(x) = \frac{\pi}{2}</m>
+            </li>
+            <li>
+                <m>\lim_{{x \to -\infty}} arctan(x) = -\frac{\pi}{2}</m>
+            </li>
+            <li>
+                <m>\lim_{{x \to -\infty}} e^x = 0</m>
+            </li>
         </ol>
     </p>
 </section>

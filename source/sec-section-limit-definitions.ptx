@@ -52,6 +52,12 @@
           <me>\lim_{{x \to a}} f(x) = \infty</me>
           if for every positive number <m>M</m> there exists a number <m>\delta \gt 0</m> such that:
           <me>0 \lt |x - a| \lt \delta \implies f(x) \gt M</me>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def_negative_infinite_limit">
+      <statement>
+        <p>
           The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is negative infinity, i.e. 
           <me>\lim_{{x \to a}} f(x) = -\infty</me> 
           if for every negative number <m>N</m> there exists a number <m>\delta \gt 0</m> such that:
@@ -68,6 +74,60 @@
             <mrow>\lim_{{x \to a}} f(x) \amp = \infty \amp \lim_{{x \to a^-}} f(x) \amp = \infty \amp \lim_{{x \to a^+}} f(x) \amp = \infty</mrow>
             <mrow>\lim_{{x \to a}} f(x) \amp = -\infty \amp \lim_{{x \to a^-}} f(x) \amp = -\infty \amp \lim_{{x \to a^+}} f(x) \amp = -\infty</mrow>
           </md>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-limit_at_infinity">
+      <statement>
+        <p>
+          Let <m>f</m> be a function defined on <m>(a, \infty)</m>. Then:
+          <me>
+            \lim_{{x \to \infty}} f(x) = L
+          </me>
+          if for every number <m>\epsilon \gt 0</m> there exists a number <m>N</m> such that:
+          <me>
+            x \gt N \implies |f(x) - L| \lt \epsilon
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-limit_at_negative_infinity">
+      <statement>
+        <p>
+          Let <m>f</m> be a function defined on <m>(-\infty, a)</m>. Then:
+          <me>
+            \lim_{{x \to -\infty}} f(x) = L
+          </me>
+          if for every number <m>\epsilon \gt 0</m> there exists a number <m>N</m> such that:
+          <me>
+            x \lt N \implies |f(x) - L| \lt \epsilon
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-infinite_limit_at_infinity">
+      <statement>
+        <p>
+          Let <m>f</m> be a function defined on <m>(a, \infty)</m>. Then:
+          <me>
+            \lim_{{x \to \infty}} f(x) = \infty
+          </me>
+          if for every positive number <m>M</m> there exists a number <m>N</m> such that:
+          <me>
+            x \gt N \implies f(x) \gt M
+          </me>
+          Similar definitions apply when <m>\infty</m> is replaced by <m>-\infty</m>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-horizontal_asymptote">
+      <statement>
+        <p>
+          The line <m>y = L</m> is called a <alert>horizontal asymptote</alert> of the curve <m>y = f(x)</m> if either:
+          <me>
+            \lim_{{x \to \infty}} f(x) = L \quad \text{or} \quad \lim_{{x \to -\infty}} f(x) = L
+          </me>
+          
         </p>
       </statement>
     </definition>
