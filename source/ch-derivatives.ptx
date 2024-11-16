@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-derivatives" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Derivatives</title>
+
+  <!-- include sections -->
+  <xi:include href="sec-slope-of-tangent.ptx" />
+  <xi:include href="sec-rate-of-change.ptx" />
+
+</chapter>
