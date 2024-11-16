@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-section-limit-exercises" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-limit-exercises" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Limit Exercises</title>
     <exercises xml:id="exercises-limits">
         <exercise>
             <statement>
                 <p>
-                    Let <m>f(x) = |x|</m>. Show that <m>\lim_{{x \to 0}} |x| = 0</m>
+                    Show that <m>\lim_{{x \to 0}} |x| = 0</m>
                 </p>
             </statement>
             <hint>
@@ -39,7 +39,7 @@
                         </li>
                         <li>
                             <p>
-                                <m>\lim_{{x \to 0^+}} |x| = \lim_{{x \to 0^-}} |x| = 0</m>
+                                <m>\lim_{{x \to 0^+}} |x| = 0 = \lim_{{x \to 0^-}} |x|</m>
                                 <me>\therefore \lim_{{x \to 0}} |x| = 0 </me>
                             </p>
                         </li>
@@ -89,7 +89,8 @@
                         <li>
                             <p>
                                 <m>\lim_{{x \to n^+}} \left[ \left[ x \right] \right] \neq \lim_{{x \to n^-}} \left[ \left[ x \right] \right]</m>
-                                <me>\therefore \lim_{{x \to n}} \left[ \left[ x \right] \right] \text{ does not exist.}</me>
+                                <me>\therefore \lim_{{x \to n}} \left[ \left[ x \right] \right] \text{ does not exist}</me>
+                                by <xref ref="thm-limit-existence"/>
                             </p>
                         </li>
                     </ol>
@@ -104,7 +105,7 @@
             </statement>
             <hint>
                 <p>
-                    Use <xref ref="def_infinite_limit"/> and find a <m>\delta</m> in terms of <m>M</m>.
+                    Use <xref ref="def-infinite-limit"/>.
                     The final result should be intuitive since 1 divided by something really small will be an arbitrarily large number 
                     (the graph of this function confirms). This logic generalizes to other functions
                     of the same form and should help in solving future problems.
@@ -124,26 +125,29 @@
                         </li>
                         <li>
                             <p>
-                                We want to manipulate <m>\frac{1}{x^2} \gt M</m> so it looks like <m>|x| \lt \delta_{guess}</m>
-                                and then show that <m>\delta_{guess}</m> works.
+                                We want to manipulate <m>\frac{1}{x^2} \gt M</m> so it looks like <m>|x| \lt \delta</m>.
+                                This will give a good guess for <m>\delta</m>. Then again by assuming <m>0 \lt |x| \lt \delta</m>
+                                we need to show that the condition <m>\frac{1}{x^2} \gt M</m> directly arises.
                             </p>
                         </li>
                         <li>
                             <p>
                                 Recall: <m>|x| = \sqrt{x^2}</m>.
-                                <me>\frac{1}{x^2} \gt M \iff x^2 \lt \frac{1}{M} \quad \text{(take reciprocal and flip inequality).}</me>
-                                <me>\sqrt{x^2} \lt \sqrt{\frac{1}{M}} \quad \text{(take sqrt of both sides)}</me>
+                                <me>\frac{1}{x^2} \lt M</me>
+                                <me>x^2 \lt \frac{1}{M}</me>
+                                <me>\sqrt{x^2} \lt \sqrt{\frac{1}{M}}</me>
                                 <me>|x| \lt \frac{1}{\sqrt{M}}</me>
-                                <me>\therefore \delta_{guess} = \frac{1}{\sqrt{M}}</me>
+                                <me>\therefore \delta = \frac{1}{\sqrt{M}}</me>
                             </p>
                         </li>
                         <li>
                             <p>
                                 Given <m>0 \lt |x| \lt \delta</m>:
-                                <me>|x| \lt \delta \iff \sqrt{x^2} \lt \delta \quad (|x| = \sqrt{x^2})</me>
-                                <me>\sqrt{x^2} \lt \delta \iff x^2 \lt \delta^2 \quad \text{(square both sides)}</me>
-                                <me>x^2 \lt \delta^2 \iff \frac{1}{x^2} \gt \frac{1}{\delta^2} \quad \text{(take reciprocal and flip inequality)}</me>
-                                <me>\frac{1}{x^2} \gt \frac{1}{\delta^2} \iff \frac{1}{x^2} \gt M \quad (\frac{1}{\delta^2} = \sqrt{M^2} = M)</me>
+                                <me>|x| \lt \delta</me>
+                                <me>\sqrt{x^2} \lt \delta</me>
+                                <me>x^2 \lt \delta^2</me>
+                                <me>\frac{1}{x^2} \gt \frac{1}{\delta^2}</me>
+                                <me>\frac{1}{x^2} \gt M</me>
                                 <me>\therefore 0 \lt |x| \lt \delta \implies \frac{1}{x^2} \gt M</me>
                                 <me>\therefore \lim_{{x \to 0}} \frac{1}{x^2} = \infty</me>
                             </p>

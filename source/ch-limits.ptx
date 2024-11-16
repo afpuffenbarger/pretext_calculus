@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Limits</title>
+
+  <!-- include sections -->
+  <xi:include href="sec-limit-definitions.ptx" />
+  <xi:include href="sec-limit-theorems.ptx" />
+  <xi:include href="sec-limit-laws.ptx" />
+  <xi:include href="sec-special-limits.ptx" />
+  <xi:include href="sec-continuity.ptx" />
+  <xi:include href="sec-limit-remarks.ptx" />
+  <xi:include href="sec-limit-exercises.ptx" />
+
+</chapter>

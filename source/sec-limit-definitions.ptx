@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-section-limit-definitions" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-limit-definitions" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Limit Definitions</title>
   <p>
     <statement>
       <p>
         Let <m>f(x)</m> be a function defined on an open interval containing <m>a</m>, except possibly at <m>a</m> itself
-        and <m>L</m> be any real number.
+        and let <m>L</m> be any real number.
       </p>
     </statement>
-    <definition xml:id="def_two_sided_limit">
+    <definition xml:id="def-two-sided-limit">
       <p>
         <statement>
           <p>
@@ -25,7 +25,7 @@
         </statement>
       </p>
     </definition>
-    <definition xml:id="def_left_hand_limit">
+    <definition xml:id="def-left-hand-limit">
       <statement>
         <p>
           The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> from the left is <m>L</m>, i.e.
@@ -35,7 +35,7 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def_right_hand_limit">
+    <definition xml:id="def-right-hand-limit">
       <statement>
         <p>
           The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> from the right is <m>L</m>, i.e.
@@ -45,7 +45,7 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def_infinite_limit">
+    <definition xml:id="def-infinite-limit">
       <statement>
         <p>
           The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is infinity, i.e.
@@ -55,7 +55,7 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def_negative_infinite_limit">
+    <definition xml:id="def-negative-infinite-limit">
       <statement>
         <p>
           The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is negative infinity, i.e. 
@@ -65,7 +65,7 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def_vertical_asymptote">
+    <definition xml:id="def-vertical-asymptote">
       <statement>
         <p>
           The line <m>x = a</m> is called a <alert>vertical asymptote</alert> of the curve <m>y = f(x)</m>
@@ -77,7 +77,7 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def-limit_at_infinity">
+    <definition xml:id="def-limit-at-infinity">
       <statement>
         <p>
           Let <m>f</m> be a function defined on <m>(a, \infty)</m>. Then:
@@ -91,7 +91,7 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def-limit_at_negative_infinity">
+    <definition xml:id="def-limit-at-negative-infinity">
       <statement>
         <p>
           Let <m>f</m> be a function defined on <m>(-\infty, a)</m>. Then:
@@ -105,7 +105,7 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def-infinite_limit_at_infinity">
+    <definition xml:id="def-infinite-limit-at-infinity">
       <statement>
         <p>
           Let <m>f</m> be a function defined on <m>(a, \infty)</m>. Then:
@@ -120,14 +120,13 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def-horizontal_asymptote">
+    <definition xml:id="def-horizontal-asymptote">
       <statement>
         <p>
           The line <m>y = L</m> is called a <alert>horizontal asymptote</alert> of the curve <m>y = f(x)</m> if either:
           <me>
             \lim_{{x \to \infty}} f(x) = L \quad \text{or} \quad \lim_{{x \to -\infty}} f(x) = L
           </me>
-          
         </p>
       </statement>
     </definition>

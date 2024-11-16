@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-section-limit-remarks">
+<section xml:id="sec-limit-remarks">
     <title>Helpful Limit Remarks</title>
     <remark>
         <p>
-          <xref ref="def_two_sided_limit"/> says the distance between <m>f(x)</m> and <m>L</m> can be made arbitrarily small
+          <xref ref="def-two-sided-limit"/> says the distance between <m>f(x)</m> and <m>L</m> can be made arbitrarily small
           (<m>\epsilon</m>-small) by making the distance from <m>x</m> to <m>a</m> sufficiently small (<m>\delta</m>-small).
           Or, in terms of intervals, <m>f(x)</m> is guaranteed to be in the open interval <m>(L - \epsilon, L + \epsilon)</m>
           if <m>x</m> is in the open interval <m>(a - \delta, a + \delta)</m> where <m>x \neq a</m>.
@@ -12,9 +12,9 @@
       </remark>
       <remark>
         <p>
-          <xref ref="def_infinite_limit"/> says that given any arbitrarily large positive number <m>M</m>,
+          <xref ref="def-infinite-limit"/> says that given any arbitrarily large positive number <m>M</m>,
           you can find an even bigger value for <m>f(x)</m> if <m>x</m> is sufficiently close to <m>a</m>.
-          Conversely, given any arbitrarily large negative number <m>N</m>,
+          <xref ref="def-negative-infinite-limit"/> says that given any arbitrarily large negative number <m>N</m>,
           you can find an even more negative value for <m>f(x)</m> if <m>x</m> is sufficiently close to <m>a</m>.
         </p>
       </remark>
@@ -50,6 +50,12 @@
         <p>
           A continuous process takes place gradually, without interruption or sudden change. Geometrically
           , a continuous function can be thought of as a function whose graph has no breaks/holes and can be drawn without lifting pen from paper.
+        </p>
+      </remark>
+      <remark>
+        <p>
+          In applying <xref ref="thm-rational-limits"/>, if the rational function <m>f</m> is not already in this form,
+          it may be helpful to divide the numerator and denominator by the highest power of <m>x</m> in the denominator.
         </p>
       </remark>
       <remark>
@@ -105,7 +111,7 @@
       </remark>
       <remark>
         <p>
-          <xref ref="def-continuous-function-operations"/> follows from the corresponding limit laws in <xref ref="sec-section-limit-laws"/>
+          <xref ref="def-continuous-function-operations"/> follows from the corresponding limit laws in <xref ref="sec-limit-laws"/>
         </p>
       </remark>
       <remark>
@@ -131,6 +137,8 @@
           <xref ref="thm-intermediate-value-theorem"/> says a continuous function takes on every value between <m>f(a)</m> and <m>f(b)</m>.
           Geometrically, if the horizontal line <m>y = N</m> is between <m>f(a)</m> and <m>f(b)</m>, then graph of <m>f</m> must intersect the graph of
           <m>y = N</m> somewhere. This is particularly useful in root finding (finding zeros) where <m>f(a) \lt 0</m> and <m>f(b) \gt 0</m>.
+          While <alert>I.V.T.</alert> doesn't tell you what the roots are, by successively shrinking the size of the interval <m>[a, b]</m>,
+          you can zero-in on where they must lie.
         </p>
       </remark>
 </section>

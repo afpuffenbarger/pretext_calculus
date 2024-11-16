@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-section-limit-theorems" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-limit-theorems" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Limit Theorems</title>
   <p>
     <theorem xml:id="thm-limit-existence">
@@ -29,7 +29,7 @@
         <statement>
           <p>
             If <m>f(x) \leq g(x)</m> when <m>x</m> is near <m>a</m> 
-            and the limits of <m>f</m> and <m>g</m> both exist when approaches <m>a</m> then:
+            and the limits of <m>f</m> and <m>g</m> both exist when <m>x</m> approaches <m>a</m> then:
             <me>\lim_{{x \to a}} f(x) \leq \lim_{{x \to a}} g(x)</me>
           </p>
         </statement>

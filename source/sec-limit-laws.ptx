@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-section-limit-laws" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-limit-laws" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Limit Laws</title>
   <p>
     <statement>
@@ -47,6 +47,7 @@
         <p>
           <term>Power Law</term>
           <me>\lim_{{x \to a}} [f(x)]^n = [\lim_{{x \to a}} f(x)]^n</me>
+          where <m>n</m> is a positve integer
         </p>
       </li>
       <li>

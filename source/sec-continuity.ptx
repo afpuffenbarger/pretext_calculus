@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-section-continuity" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-continuity" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Continuity</title>
   <p>
     <definition xml:id="def-continuity">
@@ -20,14 +20,20 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def-one-sided-continuity">
+    <definition xml:id="def-continuous-from-the-right">
       <statement>
         <p>
-          A function <m>f</m> is <alert>continuous from the right at a number <m>a</m></alert> if
+          A function <m>f</m> is <alert>continuous from the right</alert> at a number <m>a</m> if
           <me>
             \lim_{{x \to a^+}} f(x) = f(a)
           </me>
-          and <m>f</m> is <alert>continuous from the left at <m>a</m></alert> if
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-continuous-from-the-left">
+      <statement>
+        <p>
+          A function <m>f</m> is <alert>continuous from the left</alert> at a number <m>a</m> if
           <me>
             \lim_{{x \to a^-}} f(x) = f(a)
           </me>
@@ -147,7 +153,7 @@
       </statement>
     </theorem>
     <theorem xml:id="thm-intermediate-value-theorem">
-      <term>Intermediate Value Theorem</term>
+      <term>Intermediate Value Theorem (I.V.T.)</term>
       <statement>
         <p>
           Let <m>f</m> be a function that is continuous on the closed interval <m>[a, b]</m> and let
