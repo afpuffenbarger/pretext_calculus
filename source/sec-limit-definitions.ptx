@@ -130,5 +130,51 @@
         </p>
       </statement>
     </definition>
+    <definition xml:id="def-continuity">
+      <statement>
+        <p>
+          A function <m>f</m> is continuous at a number <m>a</m> if
+          <me>\lim_{{x \to a}} f(x) = f(a)</me>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-discontinuity">
+      <statement>
+        <p>
+          If <m>f</m> is defined near <m>a</m> except possibly at <m>a</m> itself
+          , then <m>f</m> is <alert>discontinuous at <m>a</m></alert>, or <m>f</m> has a <alert>discontinuity at <m>a</m></alert>
+          , if <m>f</m> is not continuous at <m>a</m>.
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-continuous-from-the-right">
+      <statement>
+        <p>
+          A function <m>f</m> is <alert>continuous from the right</alert> at a number <m>a</m> if
+          <me>
+            \lim_{{x \to a^+}} f(x) = f(a)
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-continuous-from-the-left">
+      <statement>
+        <p>
+          A function <m>f</m> is <alert>continuous from the left</alert> at a number <m>a</m> if
+          <me>
+            \lim_{{x \to a^-}} f(x) = f(a)
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-continuous-on-interval">
+      <statement>
+        <p>
+          A function <m>f</m> is <alert>continuous on an interval</alert> if it is continuous at every number in that interval.
+          (If <m>f</m> is defined on only one side of an endpoint of the interval, then continuous at the endpoint means
+          continuous from the right or continuous from the left).
+        </p>
+      </statement>
+    </definition>
   </p>
 </section>

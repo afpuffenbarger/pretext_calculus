@@ -111,7 +111,7 @@
       </remark>
       <remark>
         <p>
-          <xref ref="def-continuous-function-operations"/> follows from the corresponding limit laws in <xref ref="sec-limit-laws"/>
+          <xref ref="thm-continuous-function-operations"/> follows from the corresponding limit laws in <xref ref="sec-limit-laws"/>
         </p>
       </remark>
       <remark>

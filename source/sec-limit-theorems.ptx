@@ -63,6 +63,121 @@
         </p>
       </statement>
     </theorem>
-    
+    <theorem xml:id="thm-continuous-function-operations">
+      <statement>
+        <p>
+          If <m>f</m> and <m>g</m> are continuous at <m>a</m> and <m>c</m> is a constant, then the following are also continuous at <m>a</m>:
+          <ol>
+            <li>
+              <p>
+                <m>f \pm g</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>cf</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>f*g</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{f}{g} \quad</m> if <m>g(a) \neq 0</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+    <theorem xml:id="thm-continuity-inverses">
+      <statement>
+        <p>
+          The inverse function (if it exists) of any continuous function is also continuous.
+        </p>
+      </statement>
+    </theorem>
+    <theorem xml:id="thm-continuity-of-common-functions">
+      <statement>
+        <p>
+          The following types of functions are continuous at every number in their domains:
+          <ol>
+            <li>
+              <p>
+                polynomials
+              </p>
+            </li>
+            <li>
+              <p>
+                rational functions
+              </p>
+            </li>
+            <li>
+              <p>
+                root functions
+              </p>
+            </li>
+            <li>
+              <p>
+                trigonometric functions
+              </p>
+            </li>
+            <li>
+              <p>
+                inverse trigonometric functions
+              </p>
+            </li>
+            <li>
+              <p>
+                exponential functions
+              </p>
+            </li>
+            <li>
+              <p>
+                logarithmic functions
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+    <theorem xml:id="thm-limit-of-function-is-function-of-limit">
+      <statement>
+        <p>
+          If <m>f</m> is continuous at <m>b</m> 
+          and <m>\lim_{{x \to a}} g(x) = b</m> then 
+          <me>
+            \lim_{{x \to a}} f(g(x)) = f(b)
+          </me>
+          in other words:
+          <me>
+            \lim_{{x \to a}} f(g(x)) = f(\lim_{{x \to a}} g(x))
+          </me>
+        </p>
+      </statement>
+    </theorem>
+    <theorem xml:id="thm-continuous-function-of-continuous-function">
+      <statement>
+        <p>
+          If <m>g</m> is continuous at <m>a</m> and <m>f</m> is continuous at <m>g(a)</m>, then <m>f(g(x))</m>
+          is also continuous at <m>a</m>.
+        </p>
+      </statement>
+    </theorem>
+    <theorem xml:id="thm-intermediate-value-theorem">
+      <term>Intermediate Value Theorem (I.V.T.)</term>
+      <statement>
+        <p>
+          Let <m>f</m> be a function that is continuous on the closed interval <m>[a, b]</m> and let
+          <m>N</m> be any real number such that 
+          <me>
+            f(a) \lt N \lt f(b) \quad \text{where} \quad f(a) \neq f(b)
+          </me>
+          There exists a number <m>c \in (a,b)</m> such that <m>f(c) = N</m>.
+        </p>
+      </statement>
+    </theorem>
   </p>
 </section>
