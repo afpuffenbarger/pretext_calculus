@@ -42,6 +42,12 @@
       </remark>
       <remark>
         <p>
+          <xref ref="thm-squeeze-theorem"/> is particularly useful in evaluating limits that are the product
+          of two functions where one function is bounded above and below (like <m>-1 \leq sin(x) \leq 1</m>).
+        </p>
+      </remark>
+      <remark>
+        <p>
           A continuous process takes place gradually, without interruption or sudden change. Geometrically
           , a continuous function can be thought of as a function whose graph has no breaks/holes and can be drawn without lifting pen from paper.
         </p>
