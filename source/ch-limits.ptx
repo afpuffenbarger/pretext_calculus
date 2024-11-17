@@ -8,7 +8,6 @@
   <xi:include href="sec-limit-theorems.ptx" />
   <xi:include href="sec-limit-laws.ptx" />
   <xi:include href="sec-special-limits.ptx" />
-  <xi:include href="sec-limit-remarks.ptx" />
   <xi:include href="sec-limit-exercises.ptx" />
 
 </chapter>

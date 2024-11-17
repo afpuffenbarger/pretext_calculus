@@ -13,57 +13,125 @@
       <p>
         <statement>
           <p>
-            The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is <m>L</m>, i.e.
+            The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is <m>L</m>, i.e. the limit exists
+            and is equal to the real number <m>L</m>,
             <me>\lim_{{x \to a}} f(x) = L</me>
             if for every number <m>\epsilon \gt 0</m> there exists a number <m>\delta \gt 0</m> such that:
             <me>0 \lt |x - a| \lt \delta \implies |f(x) - L| \lt \epsilon</me>
             or equivalently:
             <me>a - \delta \lt x \lt a + \delta \implies L - \epsilon \lt f(x) \lt L + \epsilon</me>
-            "The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is <m>L</m>" means the limit exists
-            and is equal to the real number <m>L</m>.
           </p>
         </statement>
+        <alert>Interpretation</alert>
+        <ol>
+          <li>
+            <p>
+              The values of <m>f(x)</m> can be made arbitrarily close to <m>L</m> (within a distance <m>\epsilon</m>)
+              by taking <m>x</m> close enough to <m>a</m> (within a distance <m>\delta</m>) but not exactly equal to <m>a</m>
+              no matter how small <m>\epsilon</m> is.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(x)</m> will be in the open interval <m>(L - \epsilon, L + \epsilon)</m>
+              if <m>x</m> is in the open interval <m>(a - \delta, a + \delta)</m> where <m>x \neq a</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The graph of <m>f(x)</m> will be between the horizontal lines <m>y = L + \epsilon</m> and <m>y = L - \epsilon</m>
+              if <m>x</m> is in <m>(a - \delta, a + \delta)</m>.
+            </p>
+          </li>
+        </ol>
+        The number <m>\epsilon</m> typically represents a desired level of accuracy.
       </p>
     </definition>
     <definition xml:id="def-left-hand-limit">
       <statement>
         <p>
-          The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> from the left is <m>L</m>, i.e.
+          The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> from the left is <m>L</m>
           <me>\lim_{{x \to a^-}} f(x) = L</me>
           if for every number <m>\epsilon \gt 0</m> there exists a number <m>\delta \gt 0</m> such that:
           <me>a - \delta \lt x \lt a \implies L - \epsilon \lt f(x) \lt L + \epsilon</me>
         </p>
       </statement>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            <xref ref="def-two-sided-limit"/> except <m>x</m> is in the left-half of <m>(a - \delta, a + \delta)</m>.
+          </p>
+        </li>
+      </ol>
     </definition>
     <definition xml:id="def-right-hand-limit">
       <statement>
         <p>
-          The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> from the right is <m>L</m>, i.e.
+          The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> from the right is <m>L</m>
           <me>\lim_{{x \to a^+}} f(x) = L</me>
           if for every number <m>\epsilon \gt 0</m> there exists a number <m>\delta \gt 0</m> such that:
           <me>a \lt x \lt a + \delta \implies L - \epsilon \lt f(x) \lt L + \epsilon</me>
         </p>
       </statement>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            <xref ref="def-two-sided-limit"/> except <m>x</m> is in the right-half of <m>(a - \delta, a + \delta)</m>.
+          </p>
+        </li>
+      </ol>
     </definition>
     <definition xml:id="def-infinite-limit">
       <statement>
         <p>
-          The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is infinity, i.e.
+          The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is infinity
           <me>\lim_{{x \to a}} f(x) = \infty</me>
           if for every positive number <m>M</m> there exists a number <m>\delta \gt 0</m> such that:
           <me>0 \lt |x - a| \lt \delta \implies f(x) \gt M</me>
         </p>
       </statement>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            The values of <m>f(x)</m> can be made arbitrarily large (larger than any given <m>M</m>) by taking
+            <m>x</m> close enough to <m>a</m> (within a distance <m>\delta</m>, where <m>\delta</m> depends on <m>M</m>).
+          </p>
+        </li>
+        <li>
+          <p>
+            The graph of <m>f(x)</m> lies above the horizontal line <m>y = M</m> if <m>x</m> is in <m>(a - \delta, a + \delta)</m>
+            no matter how large <m>M</m> is.
+          </p>
+        </li>
+      </ol>
     </definition>
     <definition xml:id="def-negative-infinite-limit">
       <statement>
         <p>
-          The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is negative infinity, i.e. 
+          The limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> is negative infinity
           <me>\lim_{{x \to a}} f(x) = -\infty</me> 
           if for every negative number <m>N</m> there exists a number <m>\delta \gt 0</m> such that:
           <me>0 \lt |x - a| \lt \delta \implies f(x) \lt N</me>
         </p>
       </statement>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            The values of <m>f(x)</m> can be made arbitrarily large negative (more negative than any given <m>N</m>) by taking
+            <m>x</m> close enough to <m>a</m> (within a distance <m>\delta</m>, where <m>\delta</m> depends on <m>N</m>).
+          </p>
+        </li>
+        <li>
+          <p>
+            The graph of <m>f(x)</m> lies below the horizontal line <m>y = N</m> if <m>x</m> is in <m>(a - \delta, a + \delta)</m>
+            no matter how large negative <m>N</m> is.
+          </p>
+        </li>
+      </ol>
     </definition>
     <definition xml:id="def-vertical-asymptote">
       <statement>
@@ -80,7 +148,8 @@
     <definition xml:id="def-limit-at-infinity">
       <statement>
         <p>
-          Let <m>f</m> be a function defined on <m>(a, \infty)</m>. Then:
+          Let <m>f</m> be a function defined on <m>(a, \infty)</m>. The limit of <m>f(x)</m> as <m>x</m>
+          approaches <m>\infty</m> is <m>L</m>
           <me>
             \lim_{{x \to \infty}} f(x) = L
           </me>
@@ -90,11 +159,27 @@
           </me>
         </p>
       </statement>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            The values of <m>f(x)</m> can be made arbitrarily close to <m>L</m> (within a distance <m>\epsilon</m>)
+            by making <m>x</m> large enough (larger than any given <m>N</m>, where <m>N</m> depends on <m>\epsilon</m>).
+          </p>
+        </li>
+        <li>
+          <p>
+            The graph of <m>f(x)</m> will lie between the horizontal lines <m>y = L + \epsilon</m> and <m>y = L - \epsilon</m>
+            if <m>x</m> is large enough (larger than any given <m>N</m>, where <m>N</m> depends on <m>\epsilon</m>).
+          </p>
+        </li>
+      </ol>
     </definition>
     <definition xml:id="def-limit-at-negative-infinity">
       <statement>
         <p>
-          Let <m>f</m> be a function defined on <m>(-\infty, a)</m>. Then:
+          Let <m>f</m> be a function defined on <m>(-\infty, a)</m>. The limit of <m>f(x)</m> as <m>x</m>
+          approaches <m>-\infty</m> is <m>L</m>
           <me>
             \lim_{{x \to -\infty}} f(x) = L
           </me>
@@ -104,21 +189,21 @@
           </me>
         </p>
       </statement>
-    </definition>
-    <definition xml:id="def-infinite-limit-at-infinity">
-      <statement>
-        <p>
-          Let <m>f</m> be a function defined on <m>(a, \infty)</m>. Then:
-          <me>
-            \lim_{{x \to \infty}} f(x) = \infty
-          </me>
-          if for every positive number <m>M</m> there exists a number <m>N</m> such that:
-          <me>
-            x \gt N \implies f(x) \gt M
-          </me>
-          Similar definitions apply when <m>\infty</m> is replaced by <m>-\infty</m>
-        </p>
-      </statement>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            The values of <m>f(x)</m> can be made arbitrarily close to <m>L</m> (within a distance <m>\epsilon</m>)
+            by making <m>x</m> negative enough (more negative than any given <m>N</m>, where <m>N</m> depends on <m>\epsilon</m>).
+          </p>
+        </li>
+        <li>
+          <p>
+            The graph of <m>f(x)</m> will lie between the horizontal lines <m>y = L + \epsilon</m> and <m>y = L - \epsilon</m>
+            if <m>x</m> is negative enough (more negative than any given <m>N</m>, where <m>N</m> depends on <m>\epsilon</m>).
+          </p>
+        </li>
+      </ol>
     </definition>
     <definition xml:id="def-horizontal-asymptote">
       <statement>
@@ -130,6 +215,23 @@
         </p>
       </statement>
     </definition>
+    <definition xml:id="def-infinite-limit-at-infinity">
+      <statement>
+        <p>
+          Let <m>f</m> be a function defined on <m>(a, \infty)</m>. The limit of <m>f(x)</m> as <m>x</m>
+          approaches <m>\infty</m> is <m>\infty</m>
+          <me>
+            \lim_{{x \to \infty}} f(x) = \infty
+          </me>
+          if for every positive number <m>M</m> there exists a number <m>N</m> such that:
+          <me>
+            x \gt N \implies f(x) \gt M
+          </me>
+          In other words, <m>f(x)</m> has an infinite limit at infinity.
+          Similar definitions apply when <m>\infty</m> is replaced by <m>-\infty</m>
+        </p>
+      </statement>
+    </definition>
     <definition xml:id="def-continuity">
       <statement>
         <p>
@@ -137,6 +239,30 @@
           <me>\lim_{{x \to a}} f(x) = f(a)</me>
         </p>
       </statement>
+      <alert>Interpretation</alert>
+      <p>This definition implies the following must all be true</p>
+      <ol>
+        <li>
+          <p>
+            <m>f(a)</m> is defined (i.e. <m>a</m> is in the domain of <m>f</m>)
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\lim_{{x \to a}} f(x)</m> exists
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\lim_{{x \to a}} f(x) = f(a)</m>
+          </p>
+        </li>
+      </ol>
+      <p>
+        A continuous process takes place gradually, without interruption or sudden change. Geometrically, 
+        a continuous function can be thought of as a function whose graph has no breaks/holes and can be drawn without lifting pen from paper.
+        The above definition formalizes these notions.
+      </p>
     </definition>
     <definition xml:id="def-discontinuity">
       <statement>
@@ -146,6 +272,23 @@
           , if <m>f</m> is not continuous at <m>a</m>.
         </p>
       </statement>
+      <ol>
+        <li>
+          <p>
+            <term>Removable discontinuity</term> - can be removed by redefining <m>f</m> at <m>a</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Infinite discontinuity</term> - <m>f</m> increases/decreases without bound near <m>a</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+          <term>Jump discontinuity</term> - <m>f</m> jumps from one value to another near <m>a</m>.
+          </p>
+        </li>
+      </ol>
     </definition>
     <definition xml:id="def-continuous-from-the-right">
       <statement>
@@ -176,5 +319,14 @@
         </p>
       </statement>
     </definition>
+    <remark>
+      <p>
+        The long way of showing <m>f</m> satisfies continuity over an interval under <xref ref="def-continuous-on-interval"/> is by showing that if <m>b \lt a \lt c</m>
+        where <m>b</m> and <m>c</m> are the left and right endpoints of the interval, then:
+        <me>\lim_{{x \to a}} f(x) = f(a)</me> is always true. Then, if the interval is closed, we can show:
+        <me>\lim_{{x \to b^+}} f(x) = f(b) \quad \text{and} \quad \lim_{{x \to c^-}} f(x) = f(c)</me>
+        to verify continuity at the left and right endpoints.
+      </p>
+    </remark>
   </p>
 </section>

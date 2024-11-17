@@ -11,6 +11,22 @@
             <me>\lim_{{x \to a}} f(x) = L \iff \lim_{{x \to a^-}} f(x) = L = \lim_{{x \to a^+}} f(x)</me>
           </p>
         </statement>
+        <alert>Interpretation</alert>
+        <p>
+          Existence of a limit can fail because either:
+          <ol>
+            <li>
+              <p>
+                Both one-sided limits exist but are different
+              </p>
+            </li>
+            <li>
+              <p>
+                At least one, one-sided limit does not exist (because of an infinite limit or the function oscillates wildly near <m>a</m>)
+              </p>
+            </li>
+          </ol>
+        </p>
       </p>
     </theorem>
     <theorem xml:id="thm-direct-substitution-property">
@@ -22,17 +38,19 @@
             <me>\lim_{{x \to a}} f(x) = f(a)</me>
           </p>
         </statement>
-      </p>
-    </theorem>
-    <theorem xml:id="thm-comparison-property">
-      <p>
-        <statement>
-          <p>
-            If <m>f(x) \leq g(x)</m> when <m>x</m> is near <m>a</m> 
-            and the limits of <m>f</m> and <m>g</m> both exist when <m>x</m> approaches <m>a</m> then:
-            <me>\lim_{{x \to a}} f(x) \leq \lim_{{x \to a}} g(x)</me>
-          </p>
-        </statement>
+        <alert>Interpretation</alert>
+        <ol>
+          <li>
+            <p>
+              If <m>f(x)</m> is defined at <m>x = a</m> (i.e. the denominator is not 0), then just plug in <m>a</m> to evalute the limit.
+            </p>
+          </li>
+          <li>
+            <p>
+              This property implies continuity. See <xref ref="def-continuity"/>
+            </p>
+          </li>
+        </ol>
       </p>
     </theorem>
     <theorem xml:id="thm-squeeze-theorem">
@@ -48,6 +66,21 @@
           </p>
         </statement>
       </p>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            If the graph of <m>g(x)</m> is squeezed between the graphs of <m>f(x)</m> and <m>h(x)</m>, both of which have the same limit near <m>a</m>,
+            then the limit of <m>g(x)</m> must be the same near <m>a</m> as well.
+          </p>
+        </li>
+        <li>
+          <p>
+            Can be useful in evaluating limits that are the product of two functions where one function is bounded above and below 
+            (<m>-1 \leq sin(x) \leq 1</m>).
+          </p>
+        </li>
+      </ol>
     </theorem>
     <theorem xml:id="thm-rational-limits">
       <statement>
@@ -63,6 +96,12 @@
         </p>
       </statement>
     </theorem>
+    <remark>
+      <p>
+        In applying <xref ref="thm-rational-limits"/>, if the rational function <m>f</m> is not already in this form,
+        it may be helpful to divide the numerator and denominator by the highest power of <m>x</m> in the denominator.
+      </p>
+    </remark>
     <theorem xml:id="thm-continuous-function-operations">
       <statement>
         <p>
@@ -89,6 +128,7 @@
               </p>
             </li>
           </ol>
+          This follows from the corresponding limit laws in <xref ref="sec-limit-laws"/>
         </p>
       </statement>
     </theorem>
@@ -96,6 +136,11 @@
       <statement>
         <p>
           The inverse function (if it exists) of any continuous function is also continuous.
+        </p>
+        <p>
+          This follows from the fact that the graph of <m>f^{-1}</m> is
+          the graph of <m>f</m> reflected over the line <m>y = x</m>.
+          Therefore, if the graph of <m>f</m> has no breaks/holes, then neither does the graph of <m>f^{-1}</m>.
         </p>
       </statement>
     </theorem>
@@ -157,6 +202,14 @@
           </me>
         </p>
       </statement>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            The limit operator can move through a function symbol if the function is continuous and the limit exists.
+          </p>
+        </li>
+      </ol>
     </theorem>
     <theorem xml:id="thm-continuous-function-of-continuous-function">
       <statement>
@@ -165,6 +218,15 @@
           is also continuous at <m>a</m>.
         </p>
       </statement>
+      <p></p>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            A continuous function of a continuous function is also continuous.
+          </p>
+        </li>
+      </ol>
     </theorem>
     <theorem xml:id="thm-intermediate-value-theorem">
       <term>Intermediate Value Theorem (I.V.T.)</term>
@@ -178,6 +240,28 @@
           There exists a number <m>c \in (a,b)</m> such that <m>f(c) = N</m>.
         </p>
       </statement>
+      <p></p>
+      <alert>Interpretation</alert>
+      <ol>
+        <li>
+          <p>
+            A continuous function takes on every value between <m>f(a)</m> and <m>f(b)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Geometrically, if the horizontal line <m>y = N</m> is between <m>f(a)</m> and <m>f(b)</m>, then graph of <m>f</m> must intersect the graph of
+            <m>y = N</m> somewhere.
+          </p>
+        </li>
+        <li>
+          <p>
+            Useful in root finding where <m>f(a) \lt 0</m> and <m>f(b) \gt 0</m>.
+            While <alert>I.V.T.</alert> doesn't tell you what the roots are, by successively shrinking the size of the interval <m>[a, b]</m>,
+            you can zero-in on where they must be.
+          </p>
+        </li>
+      </ol>
     </theorem>
   </p>
 </section>
